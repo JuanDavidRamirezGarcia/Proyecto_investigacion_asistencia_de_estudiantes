@@ -1,15 +1,15 @@
 # Predicción y análisis de asistencia de estudiantes en un proyecto educativo mediante técnicas de Machine Learning de un grupo de instituciones educativas de la ciudad de Medellín
 
 ## Descripción del Proyecto
-Este proyecto busca resolver un problema crítico en la gestión de programas educativos: la incertidumbre sobre la asistencia estudiantil. Utilizando datos históricos de talleres experienciales realizados en colegios de Medellín, se desarrollaron modelos de Machine Learning para predecir si un estudiante asistirá o no a una sesión futura.
+Este proyecto busca resolver un problema crítico en la gestión de programas educativos: la incertidumbre sobre la asistencia estudiantil. Utilizando datos históricos de talleres experienciales realizados en instituciones educativas, se desarrollaron modelos de Machine Learning para predecir si un estudiante asistirá o no a una sesión futura.
 
 ##  Problema y Contexto
 
-Los programas educativos extracurriculares enfrentan el reto de la deserción y la inasistencia fluctuante. 
+Los programas educativos extracurriculares enfrentan el reto de la deserción y la inasistencia constante. 
 Sin herramientas predictivas, es difícil para los administradores:
 * Planear los recursos eficientemente
 * Identificar estudiantes en riesgo de abandono antes de que dejen de asistir.
-* Entender qué factores (edad, grado, historial) influyen en la permanencia.
+* Entender cuáles son los factores más relevantes que influyen en la permanencia.
 
 ##  Metodología y Gobernanza de Datos
 
@@ -34,9 +34,11 @@ El desempeño de los modelos arrojó las siguientes métricas, destacando la Reg
 | Random Forest | 77.0% | 0.85 | 0.52 | Sin mejora significativa respecto al árbol simple. |
 
 ### Conclusiones del Análisis
-*  **Efectividad:** Los modelos son excelentes (**~91% de precisión**) para confirmar quiénes **SÍ** asistirán.
-*  **La debilidad:** La predicción de la inasistencia (quién faltará) es compleja (Precisión ~43-47%), lo que sugiere que faltan variables cualitativas (motivación, problemas familiares) en los datos actuales.
-*  **Patrón:** La asistencia previa es el predictor más fuerte del comportamiento futuro.
+* Los modelos lograron identificar patrones claros y variables clave como la edad y la asistencia previa.
+* Predecir la asistencia fue el reto, para predecir quién faltará hacen falta datos sobre motivación y entorno personal.
+* Se confirmó que los estudiantes de grados superiores tienen mayor constancia y responsabilidad.
+* Los modelos pueden usarse en futuros proyectos para mejorar la retención estudiantil.
+
 
 ##  Estructura del Repositorio
 
@@ -58,13 +60,15 @@ El desempeño de los modelos arrojó las siguientes métricas, destacando la Reg
 Librerías Principales:
 * pandas y numpy: Manipulación de datos.
 * scikit-learn: Entrenamiento de modelos y métricas de evaluación.
-* matplotlib y seaborn: Visualización de datos.
+* Matplotlib y seaborn: Visualización de datos.
 
 # Trabajo Futuro
 
-* Enriquecer Datos: Incorporar variables cualitativas (encuestas de satisfacción, entorno familiar).
-* Intervención: Diseñar un sistema de alertas tempranas para estudiantes con alta probabilidad de inasistencia ("Riesgo Detectado").
-* Despliegue: Empaquetar el modelo en una aplicación web sencilla para uso de los coordinadores académicos.
+* Paso 1: enriquecer el modelo. Incorporar nuevas variables: personales, contextuales, de motivación para mejorar la predicción de la inasistencia.
+* Paso 2: aplicar los modelos en proyectos futuros como herramientas de seguimiento.
+* Paso 3: diseñar estrategias de retención (ej. refuerzos) para las últimas sesiones, donde la asistencia tiende a bajar.
+* Paso 4: Diseñar un manual metodológico para que este modelo se pueda aplicar en otros colegios o proyectos educativos.
+
 
   # Quién realiza
 
