@@ -74,7 +74,7 @@ Librerías Principales:
 
 * Paso 1: enriquecer el modelo. Incorporar nuevas variables: personales, contextuales, de motivación para mejorar la predicción de la inasistencia.
 * Paso 2: aplicar los modelos en proyectos futuros como herramientas de seguimiento.
-* Paso 3: diseñar estrategias de retención (ej. refuerzos) para las últimas sesiones, donde la asistencia tiende a bajar.
+* Paso 3: diseñar estrategias de retención para las últimas sesiones, donde la asistencia tiende a bajar.
 * Paso 4: Diseñar un manual metodológico para que este modelo se pueda aplicar en otros colegios o proyectos educativos.
 
 
