@@ -36,17 +36,17 @@ El proyecto se realizó bajo una metodología **CRISP-DM**, a través de los sig
 
 El desempeño de los modelos arrojó las siguientes métricas, destacando la Regresión Logística como la opción más equilibrada:
 
-| Modelo | Exactitud (Accuracy) | F1-Score (SÍ Asiste) | F1-Score (NO Asiste) | Diagnóstico |
-| :--- | :---: | :---: | :---: | :--- |
-| **Regresión Logística** | **79.7%** | **0.87** | 0.51 | **Mejor Modelo.** El más equilibrado y simple. |
-| Árbol de Decisión | 77.0% | 0.85 | 0.52 | Alta precisión en asistencia, baja en inasistencia. |
-| Random Forest | 77.0% | 0.85 | 0.52 | Sin mejora significativa respecto al árbol simple. |
+| Métrica | Árbol de Decisión | Random Forest | Regresión Logística |
+| :--- | :---: | :---: | :---: |
+| **Exactitud-Accuracy** | 77% | 77% | **79%** |
+| **F1-Score (SI Asiste)** | 85% | 85% | **87%** |
+| **F1-Score (NO Asiste)** | **52%** | **52%** | 51% |
 
 ### Conclusiones del Análisis
+* La inasistencia fue el reto; los modelos alcanzaron un F1-Score de 52% para "No", evidenciando el efecto del desbalance de clases.
 * Variables como la edad y la asistencia previa fueron buenos predictores de la asistencia.
-* Las inasistencias fueron el reto, para predecir quién faltará hacen falta datos sobre motivación y entorno personal.
-* Se confirmó que los estudiantes de grados superiores tienen mayor constancia y responsabilidad.
-* Los modelos pueden usarse en futuros proyectos para mantener la asistencia y aprovechar mejor los recursos
+* Los modelos actuales establecen una línea base para futuras investigaciones. Para que sean aplicables en programas reales, se requieren datos más balanceados o técnicas más avanzadas que mejoren la detección de inasistencias.
+
 
 
 ##  Estructura del Repositorio
